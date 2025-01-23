@@ -46,13 +46,13 @@ def load_data(file_path):
 # Main function to execute the workflow
 def main():
     # Load training and test data from JSON files
-    training_data = load_data('OADS_Train.json')  # Training input features
-    testing_data = load_data('OADS_Test.json')    # Testing input features
+    training_data = load_data('dataset/OADS_Train.json')  # Training input features
+    testing_data = load_data('dataset/OADS_Test.json')    # Testing input features
 
     args, logger = get_config()
     instructor = Instructor(args, logger)
 
-    model_file_path = 'best_model-v1.pkl'
+
     predictions_csv_path = 'predictions-mapped.csv'  # Path to your CSV file with predictions
 
     # Get predictions using SCIBERT the classifiers
