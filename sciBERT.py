@@ -48,7 +48,7 @@ def get_results():
         state_dict = pickle.load(f)
     model.load_state_dict(state_dict)
     
-    test_csv_path = 'OADS_Test_Sentence.csv'  # Replace with your test CSV file path
+    test_csv_path = 'dataset/OADS_Test_Sentence.csv'  # Replace with your test CSV file path
     test_df = pd.read_csv(test_csv_path)
     test_dataset = Dataset.from_pandas(test_df)
 
