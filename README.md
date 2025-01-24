@@ -9,7 +9,7 @@ This repository provides an implementation of an ensemble learning framework for
 ### 1. **Download the Saved Model Weights**
 The saved model weights are stored on Google Drive. Follow these steps to download and set them up:
 
-1. Download the weights from [Google Drive Link]([https://your-google-drive-link](https://drive.google.com/drive/folders/1bWQhAPrGmcEZF86CcyKaHbLPBZTfikOz?usp=sharing)).
+1. Download the weights from [Google Drive Link]([https://your-google-drive-link](https://drive.google.com/drive/folders/1bWQhAPrGmcEZF86CcyKaHbLPBZTfikOz?usp=sharing).
 2. Create a directory named `saved_weights` in the root folder of this project.
 3. Place the downloaded weights inside the `saved_weights` folder.
 
