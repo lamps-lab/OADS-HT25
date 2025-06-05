@@ -30,4 +30,5 @@ pip install transformers==4.19.2
 pip install nltk==3.4.5
 pip install scikit-learn==0.22
 pip install numpy==1.17.2 torch==1.11.0 transformers==4.19.2
+python ensemble_learning.py
 
