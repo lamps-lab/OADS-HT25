@@ -20,6 +20,14 @@ To avoid dependency conflicts, we recommend setting up a Python virtual environm
 
 #### 2.1 **Create and Activate the Virtual Environment**  
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+conda create -n myenv python=3.7
+conda activate myenv
+pip install pytorch-ignite==0.4.2
+pip install dgl==0.6.0 -f https://data.dgl.ai/wheels-test/repo.html
+pip install numpy==1.17.2
+pip install torch==1.11.0
+pip install transformers==4.19.2
+pip install nltk==3.4.5
+pip install scikit-learn==0.22
+pip install numpy==1.17.2 torch==1.11.0 transformers==4.19.2
+
