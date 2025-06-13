@@ -35,7 +35,7 @@ class Instructor:
         self.model = Transformer(base_model, args.num_classes, args.method)
         best_model_state_dict = None  # Variable to store the best model's state_dict
         best_test_prediction = None  # Variable to store the best test prediction
-        best_model_file_path = 'best_model_bert.pkl'
+        best_model_file_path = 'SCL_weights.pkl'
         with open(best_model_file_path, 'rb') as model_file:
             best_model_state_dict = pickle.load(model_file)
         self.model.load_state_dict(best_model_state_dict, strict=False)
