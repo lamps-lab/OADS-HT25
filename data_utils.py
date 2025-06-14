@@ -63,8 +63,8 @@ def load_data(dataset, data_dir, tokenizer, test_batch_size, model_name, method,
         test_data = json.load(open(os.path.join(data_dir, 'procon_Test.json'), 'r', encoding='utf-8'))
         label_dict = {'positive': 0, 'negative': 1}
     elif dataset == 'oads':
-        # train_data = json.load(open(os.path.join(data_dir, 'OADS_Train3.json'), 'r', encoding='utf-8'))
-        test_data = json.load(open(os.path.join(data_dir, 'OADS_Test3.json'), 'r', encoding='utf-8'))
+        # train_data = json.load(open(os.path.join(data_dir, 'OADS_Train.json'), 'r', encoding='utf-8'))
+        test_data = json.load(open(os.path.join(data_dir, 'OADS_Test.json'), 'r', encoding='utf-8'))
         # test_data = json.load(open(os.path.join(data_dir, 'predicted-output.json'), 'r', encoding='utf-8'))
         # label_dict2 = {'general-url': 0, 'third-party-dataset': 1, 'author-provided-dataset': 2, 'third-party-software': 3, 'author-provided-software': 4}
         label_dict = {'general-url': 0, 'third-party-dataset': 1, 'author-provided-dataset': 2, 'third-party-software': 3, 'author-provided-software': 4, 'project': 5}
